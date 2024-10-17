@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form </title>
+</head>
+<body>
+<header style="background-color: gray;">
+        <nav style="display: flex; justify-content: center;">
+            <ul style="display: flex; flex-direction: row; gap: 32px; list-style-type: none;">
+            <div class="padding"><li style="color: white;">
+                  <p>Home</p></div>
+                  <hr>
+                    <div class="padding"><li style="color: white;">
+                  <p>Menu</p></div>
+                  <hr>
+                    <div class="padding"><li style="color: white;">
+                  <p>For more</p></div>
+                  <hr>
+                    <div class="padding"><li style="color: white;">
+                  <p>Social media</p></div>
+        </nav>
+    </header>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Gambar</title>
+</head>
+<body>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">pilih gambar:</label>
+        <input type="file" name="file" id="file" accept="image/*" required>
+        <br><br>
+    </form>
+</body>
+    <p>Your information:</p>
+    <form method="post" action="http://blackgoosebistro.com/pizza.php">
+        <label for="costumername">Title :</label>
+        <input type="text" name="customername" id="costumername"requid>
+        <br><br>
+        <label for="text">Deskripsi</label>
+        <input type="text" name="text" id="text"requid> 
+        <br><br>
+        <label for="phone">Akun no:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+123456789" pattern="[0-9]{1,3}[0-9]{7,14}" requid>
+        <br><br>
+        <label for="text">Deskripsi</label>
+        <input type="text" name="text" id="text"requid> 
+        <br><br>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email"requid>
+
+        <br><br>
+         <label for="number">jumlah transaksi</label>
+            <select name="number" id="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+           <br><br>
+            <div class="form-group checkbox-group">
+      <input id="send-to-mobile" type="checkbox"/>
+      <label for="send-to-mobile">
+       Send to Mobile Phone
+      </label>
+     </div>
+     <div class="form-group checkbox-group">
+      <input id="send-to-email" type="checkbox"/>
+      <label for="send-to-email">
+       Send to Email
+      </label>
+            <br><br>
+<label for="mobile-phone">
+       Send to Mobile Phone :
+      </label>
+      <input id="mobile-phone" type="text" value="1234567890, 1234567891"/>
+     </div>
+     <div class="form-group">
+     <br>
+      <label for="email">
+       Send to Email :
+      </label>
+      <input id="email" type="text" value="mfmm2g13@soton.ac.uk, fys_06@yahoo.com"/>
+     </div>
+            <br>
+            <input type="submit" value="done!">
+            <input type="reset" value="reset">
+        </form>
+</body>
+</html>
